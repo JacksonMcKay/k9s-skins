@@ -1,0 +1,91 @@
+bgColor: &bgColor "#202000"
+primaryColor: &primaryColor "#ffff00"
+secondaryColor: &secondaryColor "#ff8000"
+frameBorderColor: &frameBorderColor "#ffbb80"
+
+k9s:
+  body:
+    fgColor: *secondaryColor
+    bgColor: *bgColor
+    logoColor: *primaryColor
+  prompt:
+    fgColor: cadetblue
+    bgColor: black
+    suggestColor: *secondaryColor
+  info:
+    fgColor: *primaryColor
+    sectionColor: white
+  dialog:
+    fgColor: *secondaryColor
+    bgColor: black
+    buttonFgColor: black
+    buttonBgColor: *secondaryColor
+    buttonFocusFgColor: white
+    buttonFocusBgColor: *primaryColor
+    labelFgColor: *primaryColor
+    fieldFgColor: *secondaryColor
+  frame:
+    border:
+      fgColor: *secondaryColor
+      focusColor: *frameBorderColor
+    menu:
+      fgColor: white
+      fgStyle: dim
+      keyColor: *primaryColor
+      numKeyColor: *secondaryColor
+    crumbs:
+      fgColor: black
+      bgColor: steelblue
+      activeColor: orange
+    status:
+      newColor: lightskyblue
+      modifyColor: greenyellow
+      addColor: white
+      errorColor: orangered
+      pendingColor: darkorange
+      highlightColor: aqua
+      killColor: mediumpurple
+      completedColor: gray
+    title:
+      fgColor: *frameBorderColor
+      highlightColor: *primaryColor
+      counterColor: papayawhip
+      filterColor: steelblue
+  views:
+    # Charts skins...
+    charts:
+      bgColor: black
+      defaultDialColors:
+        - linegreen
+        - orangered
+      defaultChartColors:
+        - linegreen
+        - orangered
+    table:
+      fgColor: blue
+      bgColor: black
+      cursorFgColor: black
+      cursorBgColor: aqua
+      markColor: darkgoldenrod
+      header:
+        fgColor: white
+        bgColor: black
+        sorterColor: orange
+    xray:
+      fgColor: blue
+      bgColor: black
+      cursorColor: aqua
+      graphicColor: darkgoldenrod
+      showIcons: false
+    yaml:
+      keyColor: steelblue
+      colonColor: white
+      valueColor: papayawhip
+    logs:
+      fgColor: white
+      bgColor: black
+      indicator:
+        fgColor: *secondaryColor
+        bgColor: black
+        toggleOnColor: papayawhip
+        toggleOffColor: steelblue
