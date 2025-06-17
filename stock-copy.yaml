@@ -1,87 +1,112 @@
 # This is just here for reference
 k9s:
   body:
-    fgColor: dodgerblue
+    fgColor: cadetblue
     bgColor: black
     logoColor: orange
+    logoColorMsg: white
+    logoColorInfo: green
+    logoColorWarn: mediumvioletred
+    logoColorError: red
   prompt:
     fgColor: cadetblue
     bgColor: black
     suggestColor: dodgerblue
-  info:
-    fgColor: orange
-    sectionColor: white
-  dialog:
-    fgColor: dodgerblue
+    border:
+      command: aqua
+      default: seagreen
+  help:
+    fgColor: cadetblue
     bgColor: black
-    buttonFgColor: black
-    buttonBgColor: dodgerblue
-    buttonFocusFgColor: white
-    buttonFocusBgColor: fuchsia
-    labelFgColor: fuchsia
-    fieldFgColor: dodgerblue
+    sectionColor: green
+    keyColor: dodgerblue
+    numKeyColor: fuchsia
   frame:
+    title:
+      fgColor: aqua
+      bgColor: black
+      highlightColor: fuchsia
+      counterColor: papayawhip
+      filterColor: seagreen
     border:
       fgColor: dodgerblue
-      focusColor: aqua
+      focusColor: lightskyblue
     menu:
       fgColor: white
-      fgStyle: dim
       keyColor: dodgerblue
       numKeyColor: fuchsia
     crumbs:
       fgColor: black
-      bgColor: steelblue
+      bgColor: aqua
       activeColor: orange
     status:
       newColor: lightskyblue
       modifyColor: greenyellow
-      addColor: white
-      errorColor: orangered
+      addColor: dodgerblue
       pendingColor: darkorange
+      errorColor: orangered
       highlightColor: aqua
       killColor: mediumpurple
-      completedColor: gray
-    title:
-      fgColor: aqua
-      highlightColor: fuchsia
-      counterColor: papayawhip
-      filterColor: steelblue
+      completedColor: lightslategray
+  info:
+    sectionColor: white
+    fgColor: orange
   views:
-    # Charts skins...
-    charts:
-      bgColor: black
-      defaultDialColors:
-        - linegreen
-        - orangered
-      defaultChartColors:
-        - linegreen
-        - orangered
     table:
-      fgColor: blue
+      fgColor: aqua
       bgColor: black
       cursorFgColor: black
       cursorBgColor: aqua
-      markColor: darkgoldenrod
+      markColor: palegreen
       header:
         fgColor: white
         bgColor: black
-        sorterColor: orange
+        sorterColor: aqua
     xray:
-      fgColor: blue
+      fgColor: aqua
       bgColor: black
-      cursorColor: aqua
-      graphicColor: darkgoldenrod
-      showIcons: false
+      cursorColor: dodgerblue
+      cursorTextColor: black
+      graphicColor: cadetblue
+    charts:
+      bgColor: black
+      dialBgColor: black
+      chartBgColor: black
+      defaultDialColors:
+        - palegreen
+        - orangered
+      defaultChartColors:
+        - palegreen
+        - orangered
+      resourceColors:
+        cpu:
+          - dodgerblue
+          - darkslateblue
+        mem:
+          - yellow
+          - goldenrod
     yaml:
       keyColor: steelblue
-      colonColor: white
       valueColor: papayawhip
+      colonColor: white
+    picker:
+      mainColor: white
+      focusColor: aqua
+      shortcutColor: aqua
     logs:
-      fgColor: white
+      fgColor: lightskyblue
       bgColor: black
       indicator:
         fgColor: dodgerblue
         bgColor: black
-        toggleOnColor: papayawhip
-        toggleOffColor: steelblue
+        toggleOnColor: limegreen
+        toggleOffColor: gray
+  dialog:
+    fgColor: cadetblue
+    bgColor: black
+    buttonFgColor: black
+    buttonBgColor: darkslateblue
+    buttonFocusFgColor: black
+    buttonFocusBgColor: dodgerblue
+    labelFgColor: white
+    fieldFgColor: white

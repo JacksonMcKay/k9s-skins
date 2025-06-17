@@ -8,84 +8,109 @@ k9s:
     fgColor: *secondaryColor
     bgColor: *bgColor
     logoColor: *primaryColor
+    logoColorMsg: white
+    logoColorInfo: green
+    logoColorWarn: mediumvioletred
+    logoColorError: red
   prompt:
     fgColor: cadetblue
     bgColor: black
     suggestColor: *secondaryColor
-  info:
-    fgColor: *primaryColor
-    sectionColor: white
-  dialog:
-    fgColor: *secondaryColor
+    border:
+      command: aqua
+      default: seagreen
+  help:
+    fgColor: cadetblue
     bgColor: black
-    buttonFgColor: black
-    buttonBgColor: *secondaryColor
-    buttonFocusFgColor: white
-    buttonFocusBgColor: *primaryColor
-    labelFgColor: *primaryColor
-    fieldFgColor: *secondaryColor
+    sectionColor: green
+    keyColor: dodgerblue
+    numKeyColor: fuchsia
   frame:
+    title:
+      fgColor: *frameBorderColor
+      bgColor: black
+      highlightColor: *primaryColor
+      counterColor: papayawhip
+      filterColor: seagreen
     border:
       fgColor: *secondaryColor
       focusColor: *frameBorderColor
     menu:
       fgColor: white
-      fgStyle: dim
       keyColor: *primaryColor
       numKeyColor: *secondaryColor
     crumbs:
       fgColor: black
-      bgColor: steelblue
+      bgColor: aqua
       activeColor: orange
     status:
       newColor: lightskyblue
       modifyColor: greenyellow
-      addColor: white
-      errorColor: orangered
+      addColor: dodgerblue
       pendingColor: darkorange
+      errorColor: orangered
       highlightColor: aqua
       killColor: mediumpurple
-      completedColor: gray
-    title:
-      fgColor: *frameBorderColor
-      highlightColor: *primaryColor
-      counterColor: papayawhip
-      filterColor: steelblue
+      completedColor: lightslategray
+  info:
+    sectionColor: white
+    fgColor: *primaryColor
   views:
-    # Charts skins...
-    charts:
-      bgColor: black
-      defaultDialColors:
-        - linegreen
-        - orangered
-      defaultChartColors:
-        - linegreen
-        - orangered
     table:
-      fgColor: blue
+      fgColor: aqua
       bgColor: black
       cursorFgColor: black
       cursorBgColor: aqua
-      markColor: darkgoldenrod
+      markColor: palegreen
       header:
         fgColor: white
         bgColor: black
-        sorterColor: orange
+        sorterColor: aqua
     xray:
-      fgColor: blue
+      fgColor: aqua
       bgColor: black
-      cursorColor: aqua
-      graphicColor: darkgoldenrod
-      showIcons: false
+      cursorColor: dodgerblue
+      cursorTextColor: black
+      graphicColor: cadetblue
+    charts:
+      bgColor: black
+      dialBgColor: black
+      chartBgColor: black
+      defaultDialColors:
+        - palegreen
+        - orangered
+      defaultChartColors:
+        - palegreen
+        - orangered
+      resourceColors:
+        cpu:
+          - dodgerblue
+          - darkslateblue
+        mem:
+          - yellow
+          - goldenrod
     yaml:
       keyColor: steelblue
-      colonColor: white
       valueColor: papayawhip
+      colonColor: white
+    picker:
+      mainColor: white
+      focusColor: aqua
+      shortcutColor: aqua
     logs:
-      fgColor: white
+      fgColor: lightskyblue
       bgColor: black
       indicator:
-        fgColor: *secondaryColor
+        fgColor: dodgerblue
         bgColor: black
-        toggleOnColor: papayawhip
-        toggleOffColor: steelblue
+        toggleOnColor: limegreen
+        toggleOffColor: gray
+  dialog:
+    fgColor: *secondaryColor
+    bgColor: black
+    buttonFgColor: black
+    buttonBgColor: *secondaryColor
+    buttonFocusFgColor: black
+    buttonFocusBgColor: *primaryColor
+    labelFgColor: *primaryColor
+    fieldFgColor: *secondaryColor
