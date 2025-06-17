@@ -1,4 +1,4 @@
-bgColor: &bgColor "#200000"
+bgColor: &bgColor "#140705"
 primaryColor: &primaryColor "#ff0000"
 secondaryColor: &secondaryColor "#ff8080"
 frameBorderColor: &frameBorderColor "#ffaaaa"
